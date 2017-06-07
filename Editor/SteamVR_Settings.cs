@@ -101,7 +101,7 @@ public class SteamVR_Settings : EditorWindow
 #endif
 			forceShow;
 
-		if (show)
+		if (SystemInfo.graphicsDeviceID != 0 && show)
 		{
 			window = GetWindow<SteamVR_Settings>(true);
 			window.minSize = new Vector2(320, 440);
